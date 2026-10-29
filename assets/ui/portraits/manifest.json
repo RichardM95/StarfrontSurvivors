@@ -1,0 +1,73 @@
+{
+  "generator": "OpenAI builtin image_gen.imagegen",
+  "generated_date": "2026-10-29",
+  "artwork": "Original static pseudo-3D character illustrations; no skeletal animation or lip sync. Runtime CRT effect is separate.",
+  "optimization": "Lanczos downscale only, WebP quality82, original PNGs retained outside game export.",
+  "portraits": [
+    {
+      "name": "tyron",
+      "file": "tyron.webp",
+      "width": 384,
+      "height": 384,
+      "bytes": 32300,
+      "sha256": "a419d195f66552649b60da92db3725c6241efa95f7715d8733dec1b753095bcc",
+      "source_path": "/workspace/scratch/ee0b12867f8b/generated_images/exec-5a1525fd-373b-4b37-95f1-cfceab444d79.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "name": "adjutant",
+      "file": "adjutant.webp",
+      "width": 384,
+      "height": 384,
+      "bytes": 31068,
+      "sha256": "cb6e2277e03f98c69c2acbb6030dbf031d0843539bfdd063db7081aa1737dfee",
+      "source_path": "/workspace/scratch/ee0b12867f8b/generated_images/exec-caa63349-dd7d-4a52-b956-9891a3b73a0e.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "name": "collins",
+      "file": "collins.webp",
+      "width": 384,
+      "height": 384,
+      "bytes": 25750,
+      "sha256": "daf6d1a34e1640d3892d09fa9a01547de3fb83fa3b096dcf803af7d55ba9e63b",
+      "source_path": "/workspace/scratch/ee0b12867f8b/generated_images/exec-f683b565-918e-4400-844e-5fed924087e9.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "name": "hank",
+      "file": "hank.webp",
+      "width": 384,
+      "height": 384,
+      "bytes": 43778,
+      "sha256": "387faccee3507cdecf0ec19a8ae8ede595c2dfe6193119bab6c8fd280d9a6d36",
+      "source_path": "/workspace/scratch/ee0b12867f8b/generated_images/exec-c5e7c188-9e4f-4127-a956-4ac135384cb1.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "name": "ella",
+      "file": "ella.webp",
+      "width": 384,
+      "height": 384,
+      "bytes": 34702,
+      "sha256": "80759c57d0d6acf7c5c807a40f99975f3127ed5525423e169c06f140c8d46c3c",
+      "source_path": "/workspace/scratch/ee0b12867f8b/generated_images/exec-c58498af-4382-4693-bd92-731afe2e3e8f.png",
+      "source_dimensions": [
+        1254,
+        1254
+      ]
+    }
+  ]
+}

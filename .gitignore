@@ -1,0 +1,35 @@
+# Godot 引擎缓存与导入产物
+.godot/
+.import/
+*.translation
+export_credentials.cfg
+
+# 导出产物与封包
+exports/
+build/
+android/build/
+*.apk
+*.aab
+*.pck
+*.7z
+*.zip
+
+# 测试与运行临时文件
+*.tmp
+*.log
+*.exit
+
+# Python 工具缓存
+__pycache__/
+*.py[cod]
+
+# 签名与密钥（勿入库）
+*.keystore
+*.jks
+
+# 编辑器与系统文件
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/

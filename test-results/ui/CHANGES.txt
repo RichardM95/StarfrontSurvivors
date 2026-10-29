@@ -1,0 +1,2 @@
+V0.4.1 UI changes: industrial chamfered panel + button skin, five detailed AI-assisted portraits with runtime CRT scanlines and speaking waveforms, weapon and equipment silhouettes, HUD weapon slots/HP/shield/XP, circular touch symbols, NPC channel selector, shop benefit/penalty colors, consistent bridge/upgrade/branch/log styles. Enemy drawing only updated for telegraph legibility.
+No balance/save/content change. Static portraits, not true 3D, facial animation, or voice acting. No Android physical-device performance or installation claim.

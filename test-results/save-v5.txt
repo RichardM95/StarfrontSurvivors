@@ -1,9 +1,0 @@
-Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
-
-ERROR: Failed to open '/tmp/starfront-save-v5-tests/run.json.bak.tmp'.
-   at: copy (core/io/dir_access.cpp:423)
-   GDScript backtrace (most recent call first):
-       [0] _write (res://scripts/save_v5.gd:134)
-       [1] save_run (res://scripts/save_v5.gd:143)
-       [2] _init (res://tests/save_v5_test.gd:42)
-SAVE_V5 40 checks; failures=[]

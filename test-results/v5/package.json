@@ -1,9 +1,0 @@
-{
-  "apk_sha256": "5f8ebeef318ed23fe73e8eaec4e77ef66f53ae8ef0ddab16a9a4eacb6dc6b7e7",
-  "archive_sha256": "c977b15feff48a4c9408371bcd982254dc470e31da4a42e5f9fea83f8a9c684c",
-  "apk_bytes": 77814349,
-  "archive_bytes": 16727676,
-  "within_16MiB": true,
-  "archive_roundtrip": true,
-  "arm64_only": true
-}

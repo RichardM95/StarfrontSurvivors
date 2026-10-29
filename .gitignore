@@ -15,6 +15,8 @@ android/build/
 *.zip
 
 # 测试与运行临时文件
+test-results/
+.screenshots/
 *.tmp
 *.log
 *.exit

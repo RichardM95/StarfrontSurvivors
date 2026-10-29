@@ -44,33 +44,32 @@ godot --headless --path . --script res://tests/model_v5_test.gd
 godot --headless --path . --script res://tests/save_v5_test.gd
 godot --headless --path . --script res://tests/combat_v5_test.gd
 godot --headless --path . --script res://tests/ui_v5_test.gd
+godot --headless --path . --script res://tests/audio_v5_test.gd
 godot --headless --path . --script res://tests/integration_v5_test.gd
 godot --headless --path . --script res://tests/ui_persistence_v5_test.gd
 ```
 
-日志输出到 `test-results/v5/`。`tests/` 下的 v2/v4 测试针对旧规则，不代表当前版本结论。
+测试日志写入 `test-results/v5/`，该目录为生成产物，不入库。
 
 ## 导出与打包
 
 - 导出预设见 [export_presets.cfg](export_presets.cfg)：Linux x86_64 与 Android ARM64，产物写入 `exports/`（已被忽略）。
 - Android 包名 `org.starfront.survivors`，versionCode 6。
-- [package-v5.sh](package-v5.sh) 与 [repack-v5-resources.py](repack-v5-resources.py) 为受限云端环境下的封包恢复工具，需已有成功导出的 Android 外壳；正常环境直接用 Godot 编辑器导出即可。
+- 在 Godot 编辑器中直接使用上述预设导出即可。
 
 ## 目录结构
 
 ```
 assets/          字体、图标、UI 肖像资源
 design/          系统设计稿与 UI 设计稿（v5）
-docs/            版本说明与 QA/验收记录
+docs/            v5 版本说明
 scripts/         游戏逻辑（main_v5 / build_v5 / combat_v5 / save_v5 / data_v5 等）
 tests/           headless 测试与预览脚本
-test-results/    历史测试日志、截图与封包证据
 ```
 
 ## 文档
 
 - [v0.5.0 验证切片说明](docs/README_V5_CN.md)
-- [v0.4.1 UI 验收记录](docs/QA_UI41.md)
 - [系统设计稿 v5](design/系统设计稿v5.md)
 - [UI 设计稿 v5](design/UI设计稿v5.md)
 

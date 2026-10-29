@@ -31,14 +31,10 @@ v5使用独立档案。原v2/v4存档保留，不直接导入旧装备、货币�
 ## 运行与测试
 
 Godot 4.6.3，打开 project.godot。入口 scripts/main_v5.gd。
-`./run-v5-tests.sh` 跑模型/保存/战斗/UI/独立集成测试；`tests/ui_persistence_v5_test.gd`另验证真实UI保存链。
-测试日志见 test-results/v5/；旧版测试针对旧规则，不用旧通过数量证明v5。
-Android包 org.starfront.survivors，versionCode 6，同原测试签名；7z内为ARM64 APK。签名、对齐、哈希及归档往返证据见 test-results/v5/。
+`./run-v5-tests.sh` 跑模型/保存/战斗/UI/音频/独立集成测试；`tests/ui_persistence_v5_test.gd`另验证真实UI保存链。
+测试日志写入 test-results/，该目录为生成产物，不入库。
+Android包 org.starfront.survivors，versionCode 6；导出使用 export_presets.cfg，产物写入 exports/。
 
-源码Library原身份当前无访问权限，最终ZIP保留云端，等待重新选择原文件；没有创建替代身份绕过限制。
-
-## 本次封包记录
-云端完整 Android 导出进程在约 660 MiB RSS 时被系统终止，故采用 Godot 官方 `--export-pack Android` 导出当前编译资源，再以此前成功导出的同版本 Android 外壳重组、重建 sparse PCK 目录、16 KiB 对齐和同证书签名。36 项资源逐一比对；战斗、模型、存档编译字节与前次一致，更新的是 UI、场景和工程索引。最终压缩包须以 `test-results/v5/package.json` 的完整性与 SHA-256 为准，不使用中断输出。此路径不等于 Android 真机启动验收。
-正常开发环境可直接使用 Godot 的 Android 导出预设；本次 `repack-v5-resources.py` 为受限云端的封包恢复工具，需要此前已成功导出的 Android 外壳及 `/tmp/starfront-v5-package/current-resources.zip`。工程将工作线程池限制为 2，避免高核数云端自动创建过多工作线程。
-
-编译资源额外验证：Android 资源包的 mobile 特性在 headless 零像素物理屏幕下会令 dp 换算异常，直接启动测试触发巨型字体并被终止。保持交付字节不变，在 smoke 测试显式提供 density=1 后，实际 APK 解出的 sparse 资源运行成功并输出 `EXPORTED_MOBILE_RESOURCE_SMOKE_OK`、exit 0。此为桌面 headless 资源检查，仍不替代 Android 设备验收。
+## 导出说明
+工程将工作线程池限制为 2（`threading/worker_pool/max_threads`），避免高核数环境自动创建过多工作线程。
+Android 资源包的 mobile 特性在 headless 零像素物理屏幕下会令 dp 换算异常，smoke 测试需显式提供 density=1（`tests/exported_mobile_smoke.gd` 已处理）。此为桌面 headless 资源检查，不替代 Android 设备验收。

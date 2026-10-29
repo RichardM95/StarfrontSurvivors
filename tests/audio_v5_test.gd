@@ -11,5 +11,5 @@ func _initialize() -> void:
 		var voice=s._select_voice("rifle")
 		assert(voice!=s._voices[0] and voice!=s._voices[1])
 	s.free()
-	print("AUDIO_V2_TESTS 36 passed, 0 failed (routing/interval only; no audio-device playback)")
+	print("AUDIO_V5_TESTS 36 passed, 0 failed (routing/interval only; no audio-device playback)")
 	quit()
